@@ -14,20 +14,23 @@ module.exports = {
   projectName: 'skatehive-docs',
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'pt-br', 'es', 'fr'],
+    locales: ['en', 'pt-br', 'es', 'fr', 'lg'],
     localeConfigs: {
       en: { label: 'English' },
       'pt-br': { label: 'Português (BR)' },
       es: { label: 'Español' },
       fr: { label: 'Français' },
+      lg: { label: 'Luganda' },
     },
   },
   presets: [
     [
-      'classic',
+      '@docusaurus/preset-classic',
       {
         docs: {
-          sidebarPath: require.resolve('./docs/_category__.json'),
+          path: 'docs',
+          routeBasePath: 'docs',
+          sidebarPath: require.resolve('./sidebars.js'), // Use the sidebars.js file
           editUrl: 'https://github.com/sktbrd/skatehive-docs/docs/',
         },
         theme: {
@@ -43,13 +46,13 @@ module.exports = {
     ],
   ],
   headTags: [
-    {
-      tagName: 'link',
-      attributes: {
-        rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap',
-      },
-    },
+    // {
+    //   tagName: 'link',
+    //   attributes: {
+    //     rel: 'stylesheet',
+    //     href: 'https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap',
+    //   },
+    // },
     {
       tagName: 'meta',
       attributes: {
@@ -73,16 +76,6 @@ module.exports = {
       items: [
         { type: 'doc', docId: 'intro', position: 'left', label: 'Learn' },
         { to: 'https://skatehive.app', label: 'App', position: 'left' },
-        {
-          type: 'dropdown',
-          label: 'Projects',
-          position: 'left',
-          items: [
-            { label: 'Quest for Stoken', href: 'https://www.stoken.quest/' },
-            { label: 'Gnars', href: 'https://gnars.wtf' },
-            { label: 'Settle or Die', href: 'https://chromewebstore.google.com/detail/settle-or-die/ciabjlofbbflnnjocnbgidbhfnddijpm' },
-          ],
-        },
         {
           type: 'dropdown',
           label: 'Community',

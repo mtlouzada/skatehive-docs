@@ -2,18 +2,8 @@
  * CSS files with the .module.css suffix will be treated as CSS modules
  * and scoped locally.
  */
-
-* {
-  font-family: "Quattrocento", serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: medium;
-  margin: 0;
-  /* Remove default margin */
-  padding: 0;
-  /* Remove default padding */
-}
-
+ @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 body {
   background-color: var(--ifm-color-background) !important;
   /* Ensure body background is set */
@@ -27,24 +17,6 @@ body,
 #__docusaurus>div {
   background-color: var(--ifm-color-background) !important;
   /* Main background */
-}
-
-/* Apply to all relevant components */
-.heroBanner,
-.docMainContainer_gTbr,
-.sidebarViewport_Xe31,
-.menu,
-.tableOfContents_bqdL,
-.theme-doc-markdown,
-.theme-doc-footer,
-.navbar,
-.navbar__inner,
-.navbar__items,
-.navbar__item,
-.navbar__link,
-.navbar__toggle {
-  background-color: var(--ifm-color-background) !important;
-  /* Set the background */
 }
 
 .heroBanner {
@@ -106,29 +78,17 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Quattrocento", serif;
-  font-weight: 700;
+  font-family: "Urbanist", serif;
+  font-optical-sizing: auto;
   font-style: normal;
   font-size: 35px;
 }
 
-/* Navbar styles */
-.navbar {
-  background-color: #191919;
-  /* Navbar color */
-  align-items: center;
-}
-
-/* Link colors */
-a,
-.menu__link {
-  color: var(--text-color);
-  text-decoration: none;
-}
-
-a:hover,
-.menu__link:hover {
-  color: #3a3a3a !important;
+a , p {
+  font-family: "Nunito", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  
 }
 
 /* Additional styling */
@@ -156,6 +116,5 @@ a:hover,
   color: white;
 }
 
-.navbar__link--active {
-  color: #57875c !important;
-}
+
+

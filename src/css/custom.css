@@ -2,15 +2,78 @@
  * CSS files with the .module.css suffix will be treated as CSS modules
  * and scoped locally.
  */
-
-* {
-  font-family: "Quattrocento", serif;
+/* Importando a fonte Bebas Neue */
+@import url('https://fonts.googleapis.com/css2?family=Underdog&display=swap');
+/* Apply the font only to the navbar and its children */
+.navbar,
+.navbar * {
+  font-family: "Underdog", serif;
   font-weight: 400;
   font-style: normal;
-  font-size: medium;
-  margin: 0;
-  padding: 0;
+  font-size: 18px;
+  color: var(--text-color); 
+  text-decoration: none; 
+  
+  transition: color 0.3s ease, background-color 0.3s ease; 
 }
+
+/* Style for links inside the navbar */
+.navbar .navbar__link,
+.navbar .navbar__item .navbar__link,
+.navbar .menu__link {
+  font-family: "Modern Clarity", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--text-color); 
+  transition: color 0.3s ease;
+}
+
+.navbar .navbar__link:hover,
+.navbar .navbar__item .navbar__link:hover,
+.navbar .menu__link:hover {
+  color: #722929; 
+}
+
+/* Titles inside the navbar */
+.navbar .navbar__title.text--truncate {
+  font-family: "Underdog", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--text-color); 
+  text-decoration: none;
+}
+
+/* Adjustment for active navbar */
+.navbar .navbar__link--active,
+.navbar .table-of-contents__link--active {
+  color: #000000 !important;
+}
+
+/* General navbar style */
+.navbar {
+  background-color: #038624; 
+  align-items: center;
+  padding: 0 20px;
+}
+
+/* Logo style in navbar */
+.navbar .navbar__logo:hover {
+  transform: scale(1.1); 
+}
+
+/* Brand button style */
+.navbar .navbar__brand.keychainify-checked {
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar .navbar__brand.keychainify-checked:hover {
+  background-color: #0056b3;
+}
+
+
 
 body {
   background-color: var(--ifm-color-background) !important;
@@ -23,7 +86,7 @@ body {
 .sidebarViewport_Xe31,
 .menu {
   background-color: var(--ifm-color-background) !important;
-  /* Ensure sections have the same background */
+ 
 }
 
 .heroBanner {
@@ -43,6 +106,18 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.button-link {
+  display: inline-block;
+  background-color: #808080;
+  color: var(--text-color);;
+  text-decoration: none;
+ padding: 0 0;
+  font-weight: bold;
+  font-size: 16px; 
+  text-align: center;
+  cursor: pointer; 
 }
 
 iframe,
@@ -78,36 +153,69 @@ pre {
   /* Text color for dark mode */
 }
 
-/* Header and Title styles */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Quattrocento", serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 35px;
+
+/* General image adjustments */
+.markdown img {
+  max-width: 65%; 
+  height: auto; 
+  display: block; 
+  margin: 1.5rem auto; 
+  border-radius: 10px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15); 
+  transition: transform 0.3s ease; 
 }
 
-/* Navbar styles */
-.navbar {
-  background-color: #212321;
-  /* Adjust navbar color */
-  align-items: center;
+/* Hover effect */
+.markdown img:hover {
+  transform: scale(1.02); 
 }
 
-.navbar__link_,
-.navbar__item .navbar__link,
-a,
-.menu__link {
+/* Adjustments for mobile devices */
+@media (max-width: 768px) {
+  .markdown img {
+    max-width: 95%; 
+    margin: 1rem auto; 
+  }
+}
+
+/* Additional styling for larger images */
+.markdown img.large {
+  max-width: 80%; 
+  margin: 2rem auto; 
+}
+
+/* Mobile styling */
+@media (max-width: 768px) {
+  .markdown img {
+    max-width: 100%; 
+  }
+
+  .markdown img.large {
+    max-width: 90%; 
+  }
+}
+
+a:hover,
+.menu__link:hover {
+  color: #3a3a3a !important;
+}
+.table-of-contents__link toc-highlight table-of-contents__link--active , a , span {
+  color: var(--text-color) !important;
+  background-color: transparent !important;
+  font-size: 15px;
+}
+
+p {
+  font-size: 18px; 
+  line-height: 1.6; 
+  margin: 1rem 0; 
   color: var(--text-color);
-  text-decoration: none;
 }
-
-.navbar__item .navbar__link:hover {
-  color: #000000 !important;
+/* Adjusting <strong> styles */
+strong {
+  font-weight: bold;
+  font-size: 1.1em; 
+  color: #038624; 
 }
 
 /* Additional styling */
@@ -135,10 +243,8 @@ a,
   color: white;
 }
 
-.navbar__link--active {
-  color: #000000 !important;
-}
 
 .table-of-contents__link .toc-highlight .table-of-contents__link--active {
   color: #57875c !important;
 }
+

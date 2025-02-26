@@ -17,9 +17,11 @@
           "label": "Level 1",
           "items": [
             "Level - 1/login",
-            "Level - 1/discord",
+            "Level - 1/hive-wallet",
             "Level - 1/Discord-Share-Screen",
-            "Level - 1/share-ur-content"
+            "Level - 1/share-ur-content",
+            "Level - 1/discord",
+            "Level - 1/nftskatehive"
           ]
         },
         {
@@ -29,7 +31,10 @@
             "Level - 2/airdrop",
             "Level - 2/eth-wallet",
             "Level - 2/manage-hive",
-            "Level - 2/sacar-pix"
+            "Level - 2/congratulations",
+            "Level - 2/hive-witness",
+            "Level - 2/curation-trail"
+          
           ]
         }
       ]

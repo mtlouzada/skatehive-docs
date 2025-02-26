@@ -2,35 +2,60 @@
 sidebar_position: 3
 ---
 
-# Manage your Hive Tokens
+# Manage Hive
 
-You can manage your Hive tokens at your wallet. By clicking on your wallet you'll notice 5 terms, Hive, Hive Power, Hive Dollars, Savings and Estimated Account Value.
+### Manage Your Hive Tokens
 
-![Alt ​​text](../../src/assets/Tuto-manage/1.png)
+You can easily manage your Hive tokens directly from your wallet. When you click on your wallet, you will see five key terms: **Hive**, **Hive Power**, **Hive Dollars**, **Savings**, and **Estimated Account Value**.
 
-1. **Hive**
+![Hive Tokens Overview](../../src/assets/Tuto-manage/1.png)
 
-HIVE are tradeable tokens that may be transferred at anytime. HIVE can be converted to Hive Power in a process called powering up
+---
 
-2. **Hive Power**
+# 1. **Hive (HIVE)**
 
-Always a reward on posts. Exchanging Hive for Hive Power is called "Powering Up" or "Staking".
+HIVE tokens are tradeable and can be transferred at any time. You can also convert HIVE into Hive Power through a process called **Powering Up**.
 
- - Stake/Power up your HIVE tokens to have special abilities on the Hive Blockchain:
- - Larger voting power and increased curation rewards
- - More resource credits to do transactions on Hive Blockchain
- - More stake in Hive governance to support witnesses and projects
+- **What is Powering Up?**
+  - Powering Up is the process of converting HIVE tokens into Hive Power, which is essentially "staking" your tokens. This gives you increased influence and rewards within the Hive ecosystem.
 
-3. **HBD (Hive Backed Dollars)**
+---
 
-Tokens worth about $1.00 of HIVE.
+# 2. **Hive Power (HP)**
 
-4. **SAVINGS**
+Hive Power represents your stake in the Hive network. The more Hive Power you have, the more influence you have over the platform.
 
-Transfer your Hive or HBD to savings for bigger safety. Balance is subject to 3 days withdraw waiting period.
+- **Benefits of Hive Power:**
+  - **Voting Power:** More Hive Power gives you larger voting power on posts and proposals.
+  - **Curation Rewards:** Increased rewards for curating content.
+  - **More Resource Credits:** Additional resource credits to perform transactions on the Hive Blockchain.
+  - **Hive Governance:** More say in supporting witnesses and projects on Hive.
 
-> HBD in savings increases at 20.00% APR as defined by the witnesses
+To increase your Hive Power, you can **Power Up** your HIVE tokens.
 
-**Estimated account value**
+---
 
-The estimated US dollars value is based on an average value of the tokens in your wallet.
+# 3. **Hive Backed Dollars (HBD)**
+
+HBD is a stablecoin pegged to the US Dollar. Each HBD token is generally worth about **$1.00 USD** in HIVE.
+
+- **Note:** HBD can be converted into HIVE or used within the Hive ecosystem for transactions.
+
+---
+
+# 4. **Savings**
+
+You can transfer your HIVE or HBD to **Savings** for added security. Tokens in savings are subject to a **3-day withdrawal waiting period**.
+
+- **Why use Savings?**
+  - Savings provides a safer way to store your tokens, while also offering a **20.00% APR** on your HBD, as defined by the network's witnesses.
+
+---
+
+# 5. **Estimated Account Value**
+
+The **Estimated Account Value** gives you an approximate USD value of the tokens in your wallet based on their average market value. This helps you track the worth of your Hive assets in terms of real-world value.
+
+---
+
+By understanding these five key terms, you can effectively manage your Hive tokens and make the most of the features available on the Hive Blockchain.
