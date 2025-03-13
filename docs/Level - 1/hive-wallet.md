@@ -4,56 +4,32 @@ sidebar_position: 2
 
 # Hive Wallet
 
-### How to Create a Hive Wallet
+### **1. Install Hive Keychain**  
+- **On Chrome:** Go to the [Chrome Web Store](https://chromewebstore.google.com/detail/hive-keychain/jcacnejopjdphbnjgfaaobbfafkihpep) and search for "Hive Keychain." Click **"Add to Chrome"**.  
+- **On Firefox:** Download it from the official [Hive Keychain](https://hive-keychain.com) website.  
+![alt text](image.png)
 
----
+### **2. Set Up the Wallet**  
+- After installing, click on the Hive Keychain icon in your browser.  
+- Create a password to secure your wallet.  
 
-# Creating a Hive Wallet (Browser)
+![Image](https://ipfs.skatehive.app/ipfs/QmVavmvptLv455oWxdxnuunnoyiMsZU4M66BPSoNBL8rKv)
 
-Follow these steps to create your Hive wallet.
+### **3. Add Your Hive Account**  
+- Click **"Use Keys"**.  
+![Image](https://ipfs.skatehive.app/ipfs/QmY6ePRFSBL2ZzN17p23sBPKt197BNtEk5K3kqa8VTdBb2)  
 
----
+- Enter your Hive username.  
+- Paste your private key (it is recommended to use the "Active Key" for transactions and the "Posting Key" for interactions).  
 
-### Step 1: Install Hive Keychain
+### **4. Done! Now You Can:**  
+✅ Log in to Hive apps with one click.  
+✅ Send and receive HIVE and HBD tokens.  
+✅ Manage multiple Hive accounts securely.  
 
-- Install the **Hive Keychain** browser extension.  
-- Once installed, reload the page to activate the extension.
+### **Security Tips:**  
+🔹 Never share your private keys.  
+🔹 Store your keys in a safe place.  
+🔹 Always download Hive Keychain from official sources.  
 
-![Install Hive Keychain](../../src/assets/Hive-Wallet/1.png)
-
----
-
-### Step 2: Visit Ecency Signup
-
-- Go to <a href="https://ecency.com/signup" class="button-link" target="_blank">**Website Ecency Signup**</a> to create your new account.
-- Choose your **username** and enter your **email address**.
-
-![Signup Page](../../src/assets/Hive-Wallet/2.png)
-
----
-
-### Step 3: Download Your Backup
-
-- Click "Download Backup" to save your account info.  
-- This information will also be sent to your email.  
-
-> **Important:**  
-> Store this backup in a **safe place**. It’s your only way to recover your account.
-
-![Account Backup](../../src/assets/Hive-Wallet/3.png)
-
----
-
-### Step 4: Save Your Credentials
-
-- Enter your **username** and **password** in the Hive Keychain browser extension.  
-- This will securely save your credentials for easy access.
-
-![Save Credentials](../../src/assets/Hive-Wallet/4.png)
-
----
-
-### Step 5: Congratulations!
-
-Your **Hive account** is now created! 🎉  
-
+Now you can use Hive more easily! ehehe 🚀 
