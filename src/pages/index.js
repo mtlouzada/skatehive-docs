@@ -1,57 +1,28 @@
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import Layout from '@theme/Layout';
-import React, { useEffect, useState } from 'react';
-import { Helmet } from 'react-helmet';
-
-import { MendableSearchBar } from "@mendable/search";
-import styles from './index.module.css';
-
-import Animation from './frames.js';
-
-const style = { darkMode: true, accentColor: "limegreen" }
-
-function HomepageHeader() {
-  const { siteConfig } = useDocusaurusContext();
-  const [frameIndex, setFrameIndex] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setFrameIndex((frameIndex + 1) % Animation.length);
-    }, 200);
-
-    return () => clearInterval(interval);
-  }, [frameIndex]);
-
-
-  return (
-    <header className={('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
-        <Animation interval={200} />
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <MendableSearchBar placeholder="Ask me anything , in any language, as dumb as might be, dont be shy..." userIcon="https://i.gifer.com/origin/f1/f1a737e4cfba336f974af05abab62c8f_w200.gif" botIcon="https://images.ecency.com/u/hive-173115/avatar/large" cmdShortcutKey="y" dialogPlaceholder="Ask me anything about Skatehive" anon_key='524a2d83-688b-477a-ba99-05131d06138d' style={style} />
-
-      </div>
-    </header>
-  );
-}
+import React from 'react';
+import { Redirect } from '@docusaurus/router';
+import Head from '@docusaurus/Head';
 
 export default function Home() {
-  const { siteConfig } = useDocusaurusContext();
   return (
-    <Layout
-      title={`${siteConfig.title}`}
-      description="Learn about skateboarding and web3">
-
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>Skatehive Docs 🛹</title>
-        <meta property="og:title" content="Skatehive Docs 🛹" />
-        <meta property="og:description" content="SkateHive App and Community documentation for onboarding savvy users" />
-        <meta property="og:image" content="https://thumbnails.odycdn.com/optimize/s:400:0/quality:95/plain/https://spee.ch/8/b416b166fd9dbe4e.png" />
-        <meta property="og:url" content="https://skatehive.app" />
+    <>
+      <Head>
+        <title>SkateHive Docs</title>
+        <meta name="description" content="Documentation for SkateHive" />
+        {/* Twitter metadata */}
         <meta name="twitter:card" content="summary_large_image" />
-      </Helmet>
-      <HomepageHeader />
-    </Layout>
+        <meta name="twitter:title" content="SkateHive Docs" />
+        <meta name="twitter:description" content="Documentation for SkateHive" />
+        <meta name="twitter:image" content="https://ipfs.skatehive.app/ipfs/QmPvSv7iRDrHJTxBpqeoyi5utA8QmgEUCuAiQ2JsYCGz4m" />
+        {/* Open Graph metadata */}
+        <meta property="og:title" content="SkateHive Docs" />
+        <meta property="og:description" content="Documentation for SkateHive" />
+        <meta property="og:image" content="https://ipfs.skatehive.app/ipfs/QmPvSv7iRDrHJTxBpqeoyi5utA8QmgEUCuAiQ2JsYCGz4m" />
+        <meta property="og:url" content="https://docs.skatehive.app" />
+        <meta property="og:type" content="website" />
+        {/* Favicon */}
+        <link rel="icon" href="/img/skatehive.png" />
+      </Head>
+      <Redirect to="/docs/" />
+    </>
   );
 }
